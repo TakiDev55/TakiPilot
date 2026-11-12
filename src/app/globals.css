@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    /* TakiPilot design tokens — dark mode by default */
+    --radius: 0.75rem;
+
+    --background: 225 43% 5%; /* #080B14 */
+    --sidebar: 225 49% 8%; /* #0B1020 */
+    --foreground: 210 40% 98%; /* #F8FAFC */
+
+    --card: 220 39% 11%; /* #111827 */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 225 49% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 224 46% 26%; /* #243462 */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 33% 17%;
+    --muted-foreground: 215 20% 65%; /* #94A3B8 */
+
+    --accent: 220 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 30% 17%; /* #1E293B */
+    --input: 220 30% 17%;
+    --ring: 224 46% 26%;
+
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+  }
+
+  /* Optional light mode — opt in via the `.light` class on the document root */
+  .light {
+    --background: 0 0% 100%;
+    --sidebar: 0 0% 98%;
+    --foreground: 220 33% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 33% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 33% 10%;
+    --primary: 224 46% 26%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 220 33% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 215 20% 45%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 220 33% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 31.8% 91.4%;
+    --input: 214 31.8% 91.4%;
+    --ring: 224 46% 26%;
+  }
+
+  @theme inline {
+    --color-background: var(--background);
+    --color-sidebar: var(--sidebar);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --radius: var(--radius);
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+}

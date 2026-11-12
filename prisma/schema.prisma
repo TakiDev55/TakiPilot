@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// TakiPilot database foundation.
+//
+// No business models are defined in this phase. Models for users, accounts,
+// sessions, subscriptions, and product entities will be added incrementally
+// as features are implemented.
+//
+// Run `npm run db:generate` to generate the Prisma Client.
+// Run `npm run db:push` to push the schema to PostgreSQL.
+// Run `npm run db:studio` to open the Prisma Studio data browser.
